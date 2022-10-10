@@ -1,2 +1,3 @@
 # nginx_success_rate
-This shell script calculates the success rate of an interface.
+This python script calculates the success rate of your nginx logs.
+You can exclude common errors in if condition to get accurate results, currently 304 and 200 are considered as success

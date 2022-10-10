@@ -1,7 +1,7 @@
 import re
 
-logformat = re.compile(r""" (?P<statuscode>\d{3}) """, re.IGNORECASE)
-logfile = open("logs.txt", "r")
+logformat = re.compile(r""" (?P<statuscode>\d{3}) """)
+logfile = open("/var/log/nginx/access.log", "r")
 count=0
 success=0
 for line in logfile.readlines():
